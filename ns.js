@@ -60,6 +60,11 @@ function getAs(request, response) {
            
 
 }
+function test(request, response){
+    response.send('OK')
+}
+
+app.get('/api/test', test);
 
 app.get('/api/as/:ip', getAs);
 
